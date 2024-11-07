@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 表示するラッキーアイテムと画像を定義
     const luckyImages = {
-        "チャーハン": "/img/chahan.PNG",
-        "もやしナムル": "/img/moyashi_namuru.PNG",
-        "シューマイ": "/img/shumai.PNG",
-        "よだれ鶏": "/img/yodaredori.PNG",
-        "ザーサイ": "/img/zasai.PNG"
+        "チャーハン": "img/chahan.PNG",
+        "もやしナムル": "img/moyashi_namuru.PNG",
+        "シューマイ": "img/shumai.PNG",
+        "よだれ鶏": "img/yodaredori.PNG",
+        "ザーサイ": "img/zasai.PNG"
     };
     const luckyitems = Object.keys(luckyImages); //ラッキーアイテムのリストを取得
 
