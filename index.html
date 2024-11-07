@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/favicon_chiikawa.PNG">
+  <title>きょうの「ちいかわ占い」</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- min-h-screenにするとボタンの縦幅が適切に表示された -->
+<body class="flex items-center justify-center min-h-screen">
+
+    <!-- 画像を背面にする -->
+        <div class="fixed inset-0 bg-white -z-10 flex items-center justify-center">
+        <img  class="relative object-cover rounded-lg"
+        src="./img/chiikawa-top.PNG"
+        alt="something-small-opening"
+        />
+        </div>
+  
+  <!-- モーダルを開くボタン -->
+  <!-- 文字の大きさをレスポンシブ対応にしてみた -->
+        <button id="openModalBtn" class="absolute top-20 px-4 py-2 bg-lime-200 border border-amber-900 text-amber-900 font-bold sm:text-3xl md:text-5xl rounded-lg z-20 animate-bounce">今日のあなたの運勢は…</button>
+
+        <!-- モーダル -->
+        <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-30">
+            <div id="modalContent" class="p-2 rounded-lg text-white">
+            <p id="modalText" class="text-2xl"></p>
+            <button id="closeModalBtn" class="mt-4 px-4 py-2 bg-white text-black rounded-lg">閉じる</button>
+            </div>
+        </div>
+
+    <!-- 今日のラッキーアイテムを出すボタン -->
+    <button id="luckyItem" class="absolute bottom-20 group flex h-20 items-center justify-center rounded-md border border-pink-200 bg-gradient-to-b from-pink-50 via-pink-100 to-pink-50 px-4 text-pink-900 text-xl hover:bg-gradient-to-b hover:from-pink-100 hover:via-pink-100 hover:to-pink-100 active:shadow-inner"><span class="block group-active:[transform:translate3d(0,1px,0)]">今日のラッキーアイテム</span></button>
+
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
